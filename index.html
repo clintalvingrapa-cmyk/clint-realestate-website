@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clint Alvin Grapa Estates | Exceptional Living</title>
+
+    <meta name="description"
+        content="Discover elegant homes and exceptional properties with Clint Alvin Grapa Estates.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            Clint Alvin Grapa<span>ESTATES.</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#properties">Properties</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#properties" class="nav-button">
+            Explore Homes
+        </a>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="eyebrow">A NEW STANDARD OF LIVING</p>
+
+            <h1>
+                Find a Place<br>
+                to Call <em>Home.</em>
+            </h1>
+
+            <p class="hero-description">
+                Discover thoughtfully selected properties
+                designed around the way you want to live.
+            </p>
+
+            <a href="#properties" class="primary-button">
+                Discover Properties →
+            </a>
+
+        </div>
+
+        <div class="hero-bottom">
+            <span>EXCEPTIONAL HOMES. TIMELESS LIVING.</span>
+            <span>01 / 04</span>
+        </div>
+
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="intro">
+
+        <p class="eyebrow">WELCOME TO Clint Alvin Grapa ESTATES</p>
+
+        <h2>
+            More than a property.<br>
+            <em>A place to belong.</em>
+        </h2>
+
+        <p>
+            We bring together beautiful spaces and meaningful
+            opportunities, helping you find a property that
+            feels right for your lifestyle.
+        </p>
+
+    </section>
+
+
+    <!-- PROPERTY LISTINGS -->
+    <section class="properties" id="properties">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="eyebrow">OUR COLLECTION</p>
+                <h2>Explore Our <em>Properties.</em></h2>
+            </div>
+
+            <p>
+                Find a home that reflects your taste,
+                lifestyle and aspirations.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH AND FILTERS -->
+        <div class="property-controls">
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search property or location..."
+                aria-label="Search properties">
+
+            <select id="typeFilter" aria-label="Property type">
+                <option value="all">All Properties</option>
+                <option value="sale">For Sale</option>
+                <option value="rent">For Rent</option>
+            </select>
+
+            <select id="sortFilter" aria-label="Sort by price">
+                <option value="default">Sort By</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+            </select>
+
+        </div>
+
+
+        <!-- JAVASCRIPT WILL DISPLAY PROPERTY CARDS HERE -->
+        <div class="property-grid" id="propertyGrid"></div>
+
+        <p class="no-results" id="noResults" hidden>
+            No properties found. Try another search.
+        </p>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1000"
+                alt="Elegant modern home interior">
+        </div>
+
+        <div class="about-content">
+
+            <p class="eyebrow">OUR PHILOSOPHY</p>
+
+            <h2>
+                Thoughtful spaces.<br>
+                <em>Beautiful beginnings.</em>
+            </h2>
+
+            <p>
+                At Clint Alvin Grapa Estates, we believe finding a property
+                should be an inspiring experience.
+
+                Our approach combines attention to detail,
+                thoughtful service and a passion for exceptional
+                spaces.
+            </p>
+
+           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=clintalvingrapa@gmail.com&su=Real%20Estate%20Inquiry"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="btn">
+   Contact Our Team
+</a>
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+
+        <p class="eyebrow">LET'S FIND YOUR PLACE</p>
+
+        <h2>
+            Your next chapter<br>
+            <em>starts here.</em>
+        </h2>
+
+        <p>
+            Have a property in mind? We'd love to hear from you.
+        </p>
+
+       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=clintalvingrapa@gmail.com&su=Real%20Estate%20Inquiry"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="btn">
+   Contact Our Team
+</a>
+
+    </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <a href="#home" class="logo">
+            Clint Alvin Grapa<span>ESTATES.</span>
+        </a>
+
+        <p>© <span id="year"></span> Clint Alvin Grapa Estates. All rights reserved.</p>
+
+        <a href="#home">Back to top ↑</a>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
