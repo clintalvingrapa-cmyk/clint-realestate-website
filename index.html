@@ -4,232 +4,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clint Real Estate | Find Your Dream Home</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+    <title>Clint Alvin Grapa Estates | Exceptional Living</title>
 
-        body {
-            background: #f8f8f6;
-            color: #333;
-        }
+    <meta name="description"
+        content="Discover elegant homes and exceptional properties with Clint Alvin Grapa Estates.">
 
-        header {
-            background: #1c2b27;
-            color: white;
-            padding: 25px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        header h2 {
-            letter-spacing: 2px;
-        }
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 25px;
-        }
-
-        .hero {
-            min-height: 450px;
-            background: linear-gradient(
-                rgba(0,0,0,0.45),
-                rgba(0,0,0,0.45)
-            ),
-            url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600')
-            center/cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 40px 20px;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 18px;
-        }
-
-        .section {
-            padding: 70px 8%;
-            text-align: center;
-        }
-
-        .section h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
-            color: #1c2b27;
-        }
-
-        .properties {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-top: 35px;
-        }
-
-        .property-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            padding-bottom: 25px;
-        }
-
-        .property-card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-        }
-
-        .property-card h3 {
-            margin: 20px 10px 10px;
-        }
-
-        .property-card p {
-            margin-bottom: 20px;
-            color: #666;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #b89b72;
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #94764f;
-        }
-
-        .contact {
-            background: #eae9e3;
-            padding: 70px 20px;
-            text-align: center;
-        }
-
-        .contact p {
-            margin: 15px 0 25px;
-        }
-
-        footer {
-            background: #1c2b27;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav a {
-                margin: 0 8px;
-                font-size: 13px;
-            }
-
-            .hero h1 {
-                font-size: 32px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h2>CLINT REAL ESTATE</h2>
+    <!-- NAVIGATION -->
+    <header class="navbar">
 
-        <nav>
+        <a href="#home" class="logo">
+            Clint Alvin Grapa<span>ESTATES.</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
             <a href="#home">Home</a>
             <a href="#properties">Properties</a>
+            <a href="#about">About Us</a>
             <a href="#contact">Contact</a>
         </nav>
+
+        <a href="#properties" class="nav-button">
+            Explore Homes
+        </a>
+
     </header>
 
+
+    <!-- HERO SECTION -->
+    <main>
+
     <section class="hero" id="home">
-        <h1>Find Your Dream Home</h1>
-        <p>Discover beautiful properties and make your next move with confidence.</p>
-    </section>
 
-    <section class="section" id="properties">
-        <h2>Featured Properties</h2>
-        <p>Explore our selection of beautiful properties.</p>
+        <div class="hero-overlay"></div>
 
-        <div class="properties">
+        <div class="hero-content">
 
-            <div class="property-card">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Modern house">
+            <p class="eyebrow">A NEW STANDARD OF LIVING</p>
 
-                <h3>Modern Family House</h3>
-                <p>Beautiful and spacious family home.</p>
+            <h1>
+                Find a Place<br>
+                to Call <em>Home.</em>
+            </h1>
 
-                <a class="btn"
-                   href="mailto:clintalvingrapa@gmail.com?subject=Inquiry%20About%20Modern%20Family%20House">
-                    Inquire About Property
-                </a>
-            </div>
+            <p class="hero-description">
+                Discover thoughtfully selected properties
+                designed around the way you want to live.
+            </p>
 
-            <div class="property-card">
-                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800" alt="Luxury property">
-
-                <h3>Luxury Modern Home</h3>
-                <p>Elegant design with comfortable living spaces.</p>
-
-                <a class="btn"
-                   href="mailto:clintalvingrapa@gmail.com?subject=Inquiry%20About%20Luxury%20Modern%20Home">
-                    Inquire About Property
-                </a>
-            </div>
-
-            <div class="property-card">
-                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800" alt="Contemporary home">
-
-                <h3>Contemporary Residence</h3>
-                <p>A perfect place for modern living.</p>
-
-                <a class="btn"
-                   href="mailto:clintalvingrapa@gmail.com?subject=Inquiry%20About%20Contemporary%20Residence">
-                    Inquire About Property
-                </a>
-            </div>
+            <a href="#properties" class="primary-button">
+                Discover Properties →
+            </a>
 
         </div>
+
+        <div class="hero-bottom">
+            <span>EXCEPTIONAL HOMES. TIMELESS LIVING.</span>
+            <span>01 / 04</span>
+        </div>
+
     </section>
 
+
+    <!-- INTRODUCTION -->
+    <section class="intro">
+
+        <p class="eyebrow">WELCOME TO Clint Alvin Grapa ESTATES</p>
+
+        <h2>
+            More than a property.<br>
+            <em>A place to belong.</em>
+        </h2>
+
+        <p>
+            We bring together beautiful spaces and meaningful
+            opportunities, helping you find a property that
+            feels right for your lifestyle.
+        </p>
+
+    </section>
+
+
+    <!-- PROPERTY LISTINGS -->
+    <section class="properties" id="properties">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="eyebrow">OUR COLLECTION</p>
+                <h2>Explore Our <em>Properties.</em></h2>
+            </div>
+
+            <p>
+                Find a home that reflects your taste,
+                lifestyle and aspirations.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH AND FILTERS -->
+        <div class="property-controls">
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search property or location..."
+                aria-label="Search properties">
+
+            <select id="typeFilter" aria-label="Property type">
+                <option value="all">All Properties</option>
+                <option value="sale">For Sale</option>
+                <option value="rent">For Rent</option>
+            </select>
+
+            <select id="sortFilter" aria-label="Sort by price">
+                <option value="default">Sort By</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+            </select>
+
+        </div>
+
+
+        <!-- JAVASCRIPT WILL DISPLAY PROPERTY CARDS HERE -->
+        <div class="property-grid" id="propertyGrid"></div>
+
+        <p class="no-results" id="noResults" hidden>
+            No properties found. Try another search.
+        </p>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1000"
+                alt="Elegant modern home interior">
+        </div>
+
+        <div class="about-content">
+
+            <p class="eyebrow">OUR PHILOSOPHY</p>
+
+            <h2>
+                Thoughtful spaces.<br>
+                <em>Beautiful beginnings.</em>
+            </h2>
+
+            <p>
+                At Clint Alvin Grapa Estates, we believe finding a property
+                should be an inspiring experience.
+
+                Our approach combines attention to detail,
+                thoughtful service and a passion for exceptional
+                spaces.
+            </p>
+
+           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=clintalvingrapa@gmail.com&su=Real%20Estate%20Inquiry"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="btn">
+   Contact Our Team
+</a>
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
     <section class="contact" id="contact">
-        <h2>Contact Our Team</h2>
 
-        <p>Have questions or interested in a property? We would love to hear from you.</p>
+        <p class="eyebrow">LET'S FIND YOUR PLACE</p>
 
-        <a class="btn"
-           href="mailto:clintalvingrapa@gmail.com?subject=Contact%20Our%20Team">
-            Contact Our Team
-        </a>
+        <h2>
+            Your next chapter<br>
+            <em>starts here.</em>
+        </h2>
+
+        <p>
+            Have a property in mind? We'd love to hear from you.
+        </p>
+
+       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=clintalvingrapa@gmail.com&su=Real%20Estate%20Inquiry"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="btn">
+   Contact Our Team
+</a>
+
     </section>
 
+    </main>
+
+
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Clint Real Estate. All Rights Reserved.</p>
+
+        <a href="#home" class="logo">
+            Clint Alvin Grapa<span>ESTATES.</span>
+        </a>
+
+        <p>© <span id="year"></span> Clint Alvin Grapa Estates. All rights reserved.</p>
+
+        <a href="#home">Back to top ↑</a>
+
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
